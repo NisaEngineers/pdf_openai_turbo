@@ -45,7 +45,7 @@ data_list = []
 if uploaded_files:
     for pdf_file in uploaded_files:
         raw_text = process_pdf_files(pdf_file)
-        st.write(raw_text[0:10])
+        st.write(raw_text[0:100])
 
         text_splitter = CharacterTextSplitter(        
             separator = "\n",
